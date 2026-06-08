@@ -1,0 +1,6 @@
+{
+  "name": "KRISTON BURRUNDAIE",
+  "description": "Kale kontzertuen festa herrikoia eta autogestionatua.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
