@@ -70,7 +70,7 @@ export default function Contact() {
   return (
     <footer id="harremana" className="bg-[#f4f4f2] text-black pt-24 pb-12 border-t-4 border-black scroll-mt-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start pb-16 border-b-2 border-black">
+        <div className="items-start pb-16 border-b-2 border-black">
           
           {/* Informational Column */}
           <div className="lg:col-span-6 space-y-6">
