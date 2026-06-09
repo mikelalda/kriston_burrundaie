@@ -99,10 +99,10 @@ export default function Contact() {
 
             {/* Social Links Panel */}
             <div className="space-y-3 pt-2">
-              <p className="font-mono text-[10px] text-zinc-700 uppercase tracking-widest font-black">Sare Sozial herrikoiak</p>
+              <p className="font-mono text-[10px] text-zinc-700 uppercase tracking-widest font-black">Sare Soziala</p>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="https://instagram.com"
+                  href="https://instagram.com/kriston.burrundaie"
                   target="_blank"
                   rel="noreferrer"
                   title="Instagram"
