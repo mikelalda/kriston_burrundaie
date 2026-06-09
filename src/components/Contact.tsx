@@ -133,7 +133,7 @@ export default function Contact() {
           </div>
 
           {/* Interactive feedback form column */}
-          <div className="lg:col-span-6 bg-white border-2 border-black p-6 sm:p-8 space-y-6 shadow-[6px_6px_0px_#1a1a1a]">
+          {/* <div className="lg:col-span-6 bg-white border-2 border-black p-6 sm:p-8 space-y-6 shadow-[6px_6px_0px_#1a1a1a]">
             <h3 className="font-sans font-black uppercase text-xl text-black">
               Sartu Burrundaien!
             </h3>
@@ -206,7 +206,7 @@ export default function Contact() {
                 </motion.div>
               )}
             </AnimatePresence>
-          </div>
+          </div> */}
 
         </div>
 
