@@ -7,6 +7,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Calendar, MapPin, Volume2, Flame, Sparkles } from 'lucide-react';
 import { FESTIVAL_DATE, FESTIVAL_LOCATION } from '../data';
+import bannerImg from '../assets/images/kriston_burrundaie_banner_1780928499913.jpg'
 
 interface HeroProps {
   onExploreClick: () => void;
@@ -189,7 +190,7 @@ export default function Hero({ onExploreClick }: HeroProps) {
               className="w-full max-w-md relative bg-white border-4 border-black shadow-[8px_8px_0px_#ff3b30] overflow-hidden group aspect-[16/10]"
             >
               <img
-                src="/src/assets/images/kriston_burrundaie_banner_1780928499913.jpg"
+                src={bannerImg}
                 alt="Kriston Burrundaie Punk Banner"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 referrerPolicy="no-referrer"
