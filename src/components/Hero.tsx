@@ -67,7 +67,7 @@ export default function Hero({ onExploreClick }: HeroProps) {
   };
 
   const getNoiseStatus = (lvl: number) => {
-    if (lvl > 110) return { label: 'BURRUNDA BIZIA ✊', color: 'text-rose-500 animate-pulse' };
+    if (lvl > 110) return { label: 'KRISTON BURRUNDAIE ✊', color: 'text-rose-500 animate-pulse' };
     if (lvl > 95) return { label: 'ZARATA IZUGARRIA ⚡', color: 'text-red-500' };
     if (lvl > 80) return { label: 'HASI DA SOUNUA 🔥', color: 'text-orange-500' };
     if (lvl > 65) return { label: 'SOINUA HASTEAR DA 🎶', color: 'text-yellow-500' };
@@ -259,7 +259,7 @@ export default function Hero({ onExploreClick }: HeroProps) {
                 onClick={handleMakeBurrunda}
                 className="w-full py-2.5 bg-black text-white hover:bg-[#ff3b30] text-xs font-black uppercase tracking-widest transition-all flex items-center justify-center space-x-2 border-2 border-black shadow-[4px_4px_0px_#ff3b30] hover:shadow-[2px_2px_0px_#ff3b30] hover:translate-x-0.5 hover:translate-y-0.5 cursor-pointer"
               >
-                <span>EGIN BURRUNDA! ⚡</span>
+                <span>EGIN KRISTON BURRUNDAIE! ⚡</span>
               </button>
             </div>
 
