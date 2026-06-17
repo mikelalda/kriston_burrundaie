@@ -22,7 +22,7 @@ export default function Manifesto() {
     {
       icon: <Zap className="w-8 h-8 text-[#ff3b30]" />,
       title: '3. Herriko taldeen arteko saretzea',
-      text: 'Batzuetan dispersatuta gaude, bakoitza bere lokalean edo bere txokoan, elkarren berri handirik gabe. Ekimen hau elkarlanean antolatzeak elkar hobeto ezagutzeko eta gure arteko zubiak eraikitzeko balio du. Elkarlanak indartsuago egiten gaitu, eta egun honekin taldeen arteko saretze trinko eta iraunkor bat abiatu nahi dugu.',
+      text: 'Batzuetan sakabanatuta gaude, bakoitza bere lokalean edo bere txokoan, elkarren berri handirik gabe. Ekimen hau elkarlanean antolatzeak elkar hobeto ezagutzeko eta gure arteko zubiak eraikitzeko balio du. Elkarlanak indartsuago egiten gaitu, eta egun honekin taldeen arteko saretze trinko eta iraunkor bat abiatu nahi dugu.',
     },
   ];
 

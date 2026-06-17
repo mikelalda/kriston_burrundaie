@@ -6,6 +6,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, Flame, Radical } from 'lucide-react';
+import logoImg from '../assets/images/kriston_burrundaie_logo.png'
 
 interface NavbarProps {
   activeSection: string;
@@ -60,6 +61,12 @@ export default function Navbar({ activeSection, onNavClick }: NavbarProps) {
             <span className="font-sans font-black tracking-tighter text-lg text-black group-hover:text-[#ff3b30] transition-colors uppercase">
               Kriston <span className="text-[#ff3b30]">Burrundaie</span>
             </span>
+            
+            {/* <img
+              src={logoImg}
+              alt="Kriston Burrundaie"
+              className="h-10 w-auto"
+            /> */}
           </button>
 
           {/* Desktop Navigation */}

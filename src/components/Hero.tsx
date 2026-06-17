@@ -8,6 +8,7 @@ import { motion } from 'motion/react';
 import { Calendar, MapPin, Volume2, Flame, Sparkles } from 'lucide-react';
 import { FESTIVAL_DATE, FESTIVAL_LOCATION } from '../data';
 import bannerImg from '../assets/images/kriston_burrundaie_banner_1780928499913.jpg'
+import logoImg from '../assets/images/kriston_burrundaie_logo.png'
 
 interface HeroProps {
   onExploreClick: () => void;
@@ -90,7 +91,7 @@ export default function Hero({ onExploreClick }: HeroProps) {
           <div className="lg:col-span-7 flex flex-col justify-center space-y-6">
             
             {/* Tagline Badge */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
@@ -98,7 +99,7 @@ export default function Hero({ onExploreClick }: HeroProps) {
             >
               <Flame className="w-4 h-4 animate-bounce fill-white" />
               <span>Gure kaleak, gure zarata!</span>
-            </motion.div>
+            </motion.div> */}
 
             {/* Main Title - Punk Poster Styling */}
             <motion.div
@@ -107,11 +108,12 @@ export default function Hero({ onExploreClick }: HeroProps) {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="space-y-4"
             >
-              <h1 className="text-5xl sm:text-6xl md:text-7xl font-sans font-black tracking-tighter text-[#1a1a1a] leading-none uppercase">
-                Kriston <br />
-                <span className="text-white bg-[#ff3b30] inline-block px-4 py-2 my-2 transform -rotate-1 shadow-[6px_6px_0px_#1a1a1a] border-2 border-black">
-                  Burrundaie
-                </span>
+              <h1>
+                <img
+                  src={logoImg}
+                  alt="Kriston Burrundaie"
+                  className="w-full max-w-2xl"
+                />
               </h1>
               <p className="text-lg sm:text-xl font-black text-[#ff3b30] uppercase tracking-wide">
                 Kale kontzertuen festa herrikoia eta autogestionatua.
