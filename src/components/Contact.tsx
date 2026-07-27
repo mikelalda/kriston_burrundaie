@@ -90,8 +90,8 @@ export default function Contact() {
                 <Mail className="w-6 h-6 text-[#ff3b30]" />
                 <div>
                   <p className="text-[10px] font-mono text-zinc-650 uppercase font-black">Gure Posta Ofiziala</p>
-                  <a href="mailto:kriston.burrundaie@gmail.com" className="text-black hover:text-[#ff3b30] font-bold transition-colors text-sm font-mono">
-                    kriston.burrundaie@gmail.com
+                  <a href="mailto:kriston.burrundaie.fest@gmail.com" className="text-black hover:text-[#ff3b30] font-bold transition-colors text-sm font-mono">
+                    kriston.burrundaie.fest@gmail.com
                   </a>
                 </div>
               </div>
