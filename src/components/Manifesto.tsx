@@ -11,18 +11,23 @@ export default function Manifesto() {
   const objectives = [
     {
       icon: <Users className="w-8 h-8 text-[#ff3b30]" />,
-      title: '1. Kalea eta espazio publikoa herriarentzat',
-      text: 'Normalean udaletxeek edo enpresa pribatuek antolaturiko ekintzak dira nagusi gure txokoetan. Hortik kanpoko eragileek eta norbanakoek mila zailtasun izaten dituzte kalean ekimen askeak antolatzeko. Guk herriko eragile kultural zein sozialon zilegitasuna aldarrikatzen dugu espazio publikoa gure gisa erabiltzeko. Eta gaurkoan, erabilera hori rock, zarata eta kale kontzertu bilakatuko dugu.',
+      title: 'Kalea eta espazio publikoa herriarentzat',
+      text: 'Azken urteetan espazio publikoaren pribatizazioa ematen ari da. Era berean, eragile artistiko, kultural eta sozialok (tartean musikariok) traba burokratiko asko jasan behar izaten ditugu ekimenak antolatzerako orduan (ordutegiak, baimenak...). Kriston burrundaie ekimenaren bidez, kaleko artearen eta espazio publikoaren erabilera askearen aldeko aldarria zabaldu nahi dugu.',
     },
     {
       icon: <HeartCrack className="w-8 h-8 text-[#ff3b30]" />,
-      title: '2. Eszena antikomertzialaren alde, makrojaialdien aurka',
+      title: 'Eszena antikomertzialaren alde, makrojaialdien aurka',
       text: 'Euskal Herrian eszena komertziala nagusitzen ari da gero eta era nabariagoan: makrojaialdiak, sala handiak, VIP eremuak eta sarrera garestiak. Joera horrek herrietako txosnaguneetan eta gaztetxeen inguruan sortu izan den oinarrizko eszena herrikoia ahuldu du. Jaialdi handi horiek enpresa pribatuek antolatzen dituzte, helburu bakar batekin: antolatzaileen poltsikoak betetzea. KRISTON BURRUNDAIE irabazi asmorik gabeko ekimena da. Hemen lortzen den euro bakoitza eszena antikomertziala elikatzeko eta herri-kultura bultzatzeko izango da.',
     },
     {
       icon: <Zap className="w-8 h-8 text-[#ff3b30]" />,
-      title: '3. Herriko taldeen arteko saretzea',
+      title: 'Herriko taldeen arteko saretzea',
       text: 'Batzuetan sakabanatuta gaude, bakoitza bere lokalean edo bere txokoan, elkarren berri handirik gabe. Ekimen hau elkarlanean antolatzeak elkar hobeto ezagutzeko eta gure arteko zubiak eraikitzeko balio du. Elkarlanak indartsuago egiten gaitu, eta egun honekin taldeen arteko saretze trinko eta iraunkor bat abiatu nahi dugu.',
+    },
+    {
+      icon: <AlertOctagon className="w-8 h-8 text-[#ff3b30]" />,
+      title: 'Ekitaldiaren oinarrizko printzipioak',
+      text: 'Printzipio argi batzuk ditugu: irabazi-asmorik gabeko ekitaldia da hau, eta ez dugu inolako zapalkuntzarik onartzen (matxismoa, arrazismoa edo bestelako bazterkeriarik). Guztiontzako espazio seguru bat izatea da gure helburua.',
     },
   ];
 
@@ -45,8 +50,8 @@ export default function Manifesto() {
           </p>
         </div>
 
-        {/* 3 Pillars Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        {/* 4 Pillars Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 mb-16">
           {objectives.map((obj, i) => (
             <motion.div
               key={i}
@@ -54,18 +59,28 @@ export default function Manifesto() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-white p-6 sm:p-8 border-2 border-black relative group shadow-[4px_4px_0px_rgba(26,26,26,1)] hover:shadow-[6px_6px_0px_#ff3b30] transition-all"
+              className="h-full flex flex-col bg-white p-6 sm:p-8 pt-10 border-2 border-black relative group shadow-[4px_4px_0px_rgba(26,26,26,1)] hover:shadow-[6px_6px_0px_#ff3b30] hover:-translate-y-1 transition-all duration-200"
             >
-              <div className="absolute top-4 right-4 text-zinc-200 font-mono text-4xl font-black select-none group-hover:text-[#ff3b30]/30 transition-colors">
-                0{i + 1}
+              <div className="absolute -top-5 -left-5 w-14 h-14 bg-black border-2 border-black flex items-center justify-center shadow-[3px_3px_0px_#ff3b30] group-hover:-translate-y-0.5 group-hover:-translate-x-0.5 transition-transform">
+                {obj.icon}
               </div>
-              {/* <div className="mb-6">{obj.icon}</div> */}
-              <h3 className="text-xl font-sans font-black text-black uppercase tracking-tight mb-4 leading-snug">
-                {obj.title}
-              </h3>
-              <p className="text-[#2d2d2d] text-xs sm:text-sm leading-relaxed font-sans font-medium">
-                {obj.text}
-              </p>
+
+              <div className="flex-1">
+                <h3 className="text-xl font-sans font-black text-black uppercase tracking-tight mb-3 leading-snug">
+                  {obj.title}
+                </h3>
+                <div className="w-12 h-1 bg-[#ff3b30] mb-4" />
+                <p className="text-[#2d2d2d] text-xs sm:text-sm leading-relaxed font-sans font-medium">
+                  {obj.text}
+                </p>
+              </div>
+
+              <div className="flex items-center justify-between pt-5 mt-5 border-t border-dashed border-zinc-300">
+                <span className="font-mono text-[10px] uppercase tracking-widest text-zinc-400 font-black">Oinarria</span>
+                <span className="font-mono text-lg font-black text-zinc-200 group-hover:text-[#ff3b30]/40 transition-colors select-none">
+                  0{i + 1}
+                </span>
+              </div>
             </motion.div>
           ))}
         </div>
