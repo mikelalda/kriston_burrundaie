@@ -170,7 +170,7 @@ export default function Auzolana() {
     : 0;
 
   return (
-    <section id="auzolana" className="py-24 bg-white w-full border-t-2 border-b-2 border-black scroll-mt-10">
+    <section id="auzolana" className="py-24 bg-white w-full border-t-2 border-b-2 border-black scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Banner Alert Toast */}

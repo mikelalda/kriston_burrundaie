@@ -153,7 +153,7 @@ export default function Program() {
   }, []);
 
   return (
-    <section id="egitaraua" className="py-24 bg-[#f4f4f2] text-[#1a1a1a] scroll-mt-10 border-t-2 border-b-2 border-black">
+    <section id="egitaraua" className="py-24 bg-[#f4f4f2] text-[#1a1a1a] scroll-mt-24 border-t-2 border-b-2 border-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Title Container */}

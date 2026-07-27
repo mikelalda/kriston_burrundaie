@@ -32,7 +32,7 @@ export default function Manifesto() {
   ];
 
   return (
-    <section id="manifestua" className="py-24 bg-white border-t-2 border-b-2 border-black relative scroll-mt-10 overflow-hidden">
+    <section id="manifestua" className="py-24 bg-white border-t-2 border-b-2 border-black relative scroll-mt-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header section with raw editorial style */}

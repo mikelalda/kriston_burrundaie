@@ -68,7 +68,7 @@ export default function Contact() {
   };
 
   return (
-    <footer id="harremana" className="bg-[#f4f4f2] text-black pt-24 pb-12 border-t-4 border-black scroll-mt-10">
+    <footer id="harremana" className="bg-[#f4f4f2] text-black pt-24 pb-12 border-t-4 border-black scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center pb-16 border-b-2 border-black">
           

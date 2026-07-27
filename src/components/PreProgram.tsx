@@ -7,7 +7,7 @@ import React from 'react';
 
 export default function Program() {
   return (
-    <section id="egitaraua" className="py-24 bg-[#f4f4f2] text-[#1a1a1a] scroll-mt-10 border-t-2 border-b-2 border-black">
+    <section id="egitaraua" className="py-24 bg-[#f4f4f2] text-[#1a1a1a] scroll-mt-24 border-t-2 border-b-2 border-black">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="bg-white border-2 border-black shadow-[6px_6px_0px_rgba(26,26,26,1)] p-10 md:p-14">
           <span className="text-[#ff3b30] font-mono text-xs uppercase tracking-widest block font-black mb-4">

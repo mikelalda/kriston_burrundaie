@@ -79,7 +79,7 @@ export default function Hero({ onExploreClick }: HeroProps) {
   return (
     <section
       id="hero"
-      className="relative min-h-screen bg-[#f4f4f2] text-[#1a1a1a] flex flex-col justify-center pt-28 pb-16 overflow-hidden md:px-0"
+      className="relative min-h-screen bg-[#f4f4f2] text-[#1a1a1a] flex flex-col justify-center pt-28 pb-16 overflow-hidden md:px-0 scroll-mt-24"
     >
       {/* Dynamic Background Noise Effect */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(255,59,48,0.06),transparent_50%)] pointer-events-none" />

@@ -34,8 +34,14 @@ export default function Navbar({ activeSection, onNavClick }: NavbarProps) {
   ];
 
   const handleItemClick = (id: string) => {
-    onNavClick(id);
-    setIsOpen(false);
+    if (isOpen) {
+      // Close the mobile panel first so it doesn't cover the target
+      // section while the page scrolls to it.
+      setIsOpen(false);
+      setTimeout(() => onNavClick(id), 150);
+    } else {
+      onNavClick(id);
+    }
   };
 
   return (
